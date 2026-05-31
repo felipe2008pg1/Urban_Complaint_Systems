@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia Urbana Inteligente</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <span class="header-badge">●</span>
+            <h1>Denúncia Urbana</h1>
+            <span class="header-tag">INTELIGENTE</span>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- PAINEL LATERAL -->
+        <aside class="sidebar">
+
+            <div class="sidebar-intro">
+                <p>Registre problemas urbanos na sua região. Sua denúncia é geolocalizada automaticamente.</p>
+            </div>
+
+            <form id="reportForm" novalidate>
+
+                <div class="field-group">
+                    <label for="title">Título da ocorrência</label>
+                    <input type="text" id="title" placeholder="Ex.: Buraco na calçada" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="category">Categoria</label>
+                    <div class="select-wrapper">
+                        <select id="category" required>
+                            <option value="" disabled selected>Selecione…</option>
+                            <option value="buraco">🕳️ Buraco</option>
+                            <option value="lixo">🗑️ Lixo</option>
+                            <option value="alagamento">🌊 Alagamento</option>
+                            <option value="poste quebrado">💡 Poste Quebrado</option>
+                        </select>
+                        <span class="select-arrow">▾</span>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label for="description">Descrição</label>
+                    <textarea id="description" placeholder="Descreva o problema com detalhes…" required></textarea>
+                </div>
+
+                <div class="field-group">
+                    <label for="image">Foto (opcional)</label>
+                    <label class="file-label" for="image">
+                        <span id="fileText">Selecionar arquivo…</span>
+                        <input type="file" id="image" accept="image/*">
+                    </label>
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    <span class="btn-text">Enviar denúncia</span>
+                    <span class="btn-icon">→</span>
+                </button>
+
+            </form>
+
+            <div id="toast" class="toast" aria-live="polite"></div>
+
+        </aside>
+
+        <!-- MAPA -->
+        <main>
+            <div id="map"></div>
+        </main>
+
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

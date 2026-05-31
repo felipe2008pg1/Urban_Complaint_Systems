@@ -1,0 +1,19 @@
+primeiro abra 2-3 terminais
+
+--------------
+
+**BACKEND**
+
+ativar o: .\venv\Scripts\Activate.ps1
+rodar o: python -m uvicorn main:app --reload
+
+rodar na web: http://127.0.0.1:8000/docs
+
+============================================
+
+**FRONTEND**
+
+cd frontend
+rodar o: python -m http.server 5500
+
+rodar na web: http://127.0.0.1:5500
