@@ -35,7 +35,6 @@ app.include_router(report_router)
 
 app.include_router(auth_router)
 
-
 @app.get("/")
 def home():
     return {"message": "Sistema Denúncia Urbana Online"}
