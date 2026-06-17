@@ -5,29 +5,29 @@
 _I am developing a web-based urban complaint system using Python + FastAPI, focused on urban problems such as:_
 
 * Holes.
-* lixo irregular
-* enchentes
-* postes quebrados
-* iluminação apagada
-* vazamentos
-* fiação perigosa
+* Irregular garbage.
+* Floods.
+* Broken poles.
+* Lighting off.
+* Leaks.
+* Dangerous wiring.
 
-_A proposta do projeto é permitir que cidadãos:_
+_The project's goal is to allow citizens to:_
 
-* enviem denúncias com foto
-* compartilhem localização em mapa
-* acompanhem o status da ocorrência
-* aumentem a visibilidade de problemas urbanos em regiões específicas
+* Send complaints with photos.
+* Share your location on a map.
+* Follow the status of the incident.
+* Increase the visibility of urban problems in specific regions.
 
-## 🇧🇷 Motivação do projeto
+## 🇧🇷 Project motivation
 
-A ideia surgiu ao perceber a dificuldade que muitas cidades possuem para centralizar, visualizar e responder rapidamente a problemas urbanos do dia a dia.
+The idea arose from realizing the difficulty many cities have in centralizing, visualizing, and responding quickly to everyday urban problems.
 
-Em muitos casos, ocorrências ficam espalhadas entre canais diferentes, sem acompanhamento claro da população e sem organização visual eficiente.
+In many cases, incidents are scattered across different channels, without clear monitoring by the public and without efficient visual organization.
 
-O objetivo do projeto é criar uma plataforma simples, visual e acessível para melhorar a comunicação entre cidadãos e problemas urbanos reportados pela comunidade.
+The project's goal is to create a simple, visual, and accessible platform to improve communication between citizens and urban problems reported by the community.
 
-## 🛠️ Tecnologias utilizadas atualmente
+## 🛠️ Technologies currently used
 
 * Python
 * FastAPI
@@ -37,15 +37,15 @@ O objetivo do projeto é criar uma plataforma simples, visual e acessível para 
 * Leaflet.js
 * OpenStreetMap
 
-## ⚙️ Funcionalidades em desenvolvimento
+## ⚙️ Features under development
 
-* comentários por localização
-* sistema de relevância de ocorrências
-* autenticação de usuários
-* classificação automática com IA
-* dashboard administrativo
+* Comments by location.
+* Occurrence relevance system.
+* User authentication.
+* Automatic classification with AI.
+* Administrative dashboard.
 * melhoria visual do mapa
 
-> 🚨 O sistema ainda está em período de testes e desenvolvimento ativo. A adição da I.A será oficializada em pouco tempo.
+> 🚨 The system is still in the testing and active development phase. The addition of AI will be officially announced soon.
 
-_Caso alguém queira contribuir com ideias, feedbacks ou desenvolvimento, pode entrar em contato comigo pelo e-mail disponível no meu perfil._
+_If anyone wants to contribute ideas, feedback, or development, they can contact me via the email address available on my profile._
