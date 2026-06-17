@@ -44,7 +44,7 @@ The project's goal is to create a simple, visual, and accessible platform to imp
 * User authentication.
 * Automatic classification with AI.
 * Administrative dashboard.
-* melhoria visual do mapa
+* Visual improvement of the map.
 
 > 🚨 The system is still in the testing and active development phase. The addition of AI will be officially announced soon.
 
