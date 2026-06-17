@@ -1,10 +1,10 @@
-### This project are available just in version PT-BR. 🇧🇷
+### This project are available just in English. 🇺🇸
 
-# 🚔 Sistema de Denúncia Urbana Inteligente
+# 🚔 Smart Urban Complaint System
 
-_Estou desenvolvendo um sistema web de denúncias urbanas com Python + FastAPI, focado em problemas urbanos como:_
+_I am developing a web-based urban complaint system using Python + FastAPI, focused on urban problems such as:_
 
-* buracos
+* Holes.
 * lixo irregular
 * enchentes
 * postes quebrados
