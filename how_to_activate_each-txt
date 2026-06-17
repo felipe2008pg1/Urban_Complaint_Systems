@@ -2,7 +2,7 @@ First, open 2-3 terminals.
 
 --------------
 
-*BACKEND*
+#BACKEND
 
 Activate: .\venv\Scripts\Activate.ps1
 Run: python -m uvicorn main:app --reload
@@ -11,7 +11,7 @@ Run on the web: http://127.0.0.1:8000/docs
 
 ============================================
 
-*FRONTEND*
+#FRONTEND
 
 cd frontend
 Run: python -m http.server 5500
