@@ -13,7 +13,7 @@ print(os.path.abspath("database.db"))
 
 Base.metadata.create_all(bind=engine)
 
-print("TABELAS CRIADAS")
+print("TABLES CREATED")
 
 app = FastAPI()
 
@@ -32,9 +32,8 @@ app.mount(
 )
 
 app.include_router(report_router)
-
 app.include_router(auth_router)
 
 @app.get("/")
 def home():
-    return {"message": "Sistema Denúncia Urbana Online"}
+    return {"message": "Urban Reporting System Online"}
