@@ -7,17 +7,14 @@ from app.models.report_model import Report
 import shutil
 from fastapi import Form
 
-
 router = APIRouter()
 
-
 VALID_STATUS = [
-    "aberta",
-    "em análise",
-    "em andamento",
-    "resolvida"
+    "open",
+    "under review",
+    "in progress",
+    "resolved"
 ]
-
 
 @router.post("/reports")
 def create_report(
@@ -56,7 +53,7 @@ def create_report(
     db.refresh(new_report)
 
     return {
-        "message": "Denúncia criada com sucesso",
+        "message": "Report created successfully",
         "report_id": new_report.id,
         "image_path": image_path
     }
@@ -70,7 +67,6 @@ def get_reports():
 
     return reports
 
-
 @router.get("/reports/{report_id}")
 def get_report(report_id: int):
 
@@ -81,10 +77,9 @@ def get_report(report_id: int):
     ).first()
 
     if not report:
-        return {"error": "Denúncia não encontrada"}
+        return {"error": "Report not found"}
 
     return report
-
 
 @router.put("/reports/{report_id}")
 def update_report_status(
@@ -95,7 +90,7 @@ def update_report_status(
     if new_status not in VALID_STATUS:
 
         return {
-            "error": "Status inválido",
+            "error": "Invalid status",
             "valid_status": VALID_STATUS
         }
 
@@ -106,7 +101,7 @@ def update_report_status(
     ).first()
 
     if not report:
-        return {"error": "Denúncia não encontrada"}
+        return {"error": "Report not found"}
 
     report.status = new_status
 
@@ -115,6 +110,6 @@ def update_report_status(
     db.refresh(report)
 
     return {
-        "message": "Status atualizado",
+        "message": "Status updated",
         "new_status": report.status
     }
