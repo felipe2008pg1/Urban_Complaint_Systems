@@ -25,7 +25,7 @@ def register(
     ).first()
 
     if existing_user:
-        return {"error": "Email já cadastrado"}
+        return {"error": "Email already registered"}
 
     hashed_password = pwd_context.hash(password)
 
@@ -40,5 +40,5 @@ def register(
     db.commit()
 
     return {
-        "message": "Usuário criado com sucesso"
+        "message": "User created successfully"
     }
